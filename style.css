@@ -1,0 +1,122 @@
+#container,
+#container .card,
+#container .card .card {
+    background-color: #6610f2;
+    color: white;
+}
+
+.infoIcons {
+    background-color: rgb(255, 238, 218);
+    border-radius: 50px;
+    padding: 10px;
+}
+
+.notification {
+    background-color: #6610f2;
+}
+
+main, footer {
+    background-color: rgb(245, 244, 249);
+}
+
+section.recommended {
+    padding: 3.5rem 0;
+}
+
+section.recommended h2 {
+    font-size: 1.5rem;
+}
+
+section.recommended h2+.row {
+    gap: 20px 0;
+}
+
+section.recommended .card:hover {
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 10%), 0 4px 6px -2px rgb(0 0 0 / 5%) !important;
+}
+
+section.recommended .card .card-title {
+    display: -webkit-box;
+    -webkit-box-direction: vertical;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+section.recommended .card .card-title:hover {
+    color: #5e3fcb;
+    cursor: pointer;
+}
+
+section.recommended .card .card-body h3 {
+    font-size: 1rem;
+}
+
+section.recommended .stars {
+    color: rgb(255, 170, 70);
+}
+
+section.recommended .stars+span {
+    font-size: 0.75rem;
+}
+
+section.recommended .price>span {
+    color: rgb(24, 17, 60);
+    font-weight: 600;
+}
+
+section.recommended .card .card-footer span {
+    display: inline-block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.arrow-left,
+.arrow-right {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    border: 1px solid rgb(0 0 0 / 0.1);
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.arrow-left svg,
+.arrow-right svg {
+    opacity: 0.3;
+}
+
+.arrow-left {
+    left: -10px;
+}
+
+.arrow-right {
+    right: -10px;
+}
+
+@media (min-width: 992px) {
+    .arrow-left {
+        left: -40px;
+    }
+
+    .arrow-right {
+        right: -40px;
+    }
+}
+
+footer .nav-link {
+    color: inherit;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  
+  footer .nav-link:hover {
+    color: #754ffe;
+  }
+  
