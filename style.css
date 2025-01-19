@@ -15,7 +15,8 @@
     background-color: #6610f2;
 }
 
-main, footer {
+main,
+footer {
     background-color: rgb(245, 244, 249);
 }
 
@@ -31,8 +32,13 @@ section.recommended h2+.row {
     gap: 20px 0;
 }
 
+.card {
+    transition: 0.7s;
+}
+
 section.recommended .card:hover {
     box-shadow: 0 10px 15px -3px rgb(0 0 0 / 10%), 0 4px 6px -2px rgb(0 0 0 / 5%) !important;
+    transform: scale(1.15);
 }
 
 section.recommended .card .card-title {
@@ -100,6 +106,11 @@ section.recommended .card .card-footer span {
     right: -10px;
 }
 
+.feather.feather-bookmark:hover {
+    fill: currentColor;
+}
+
+
 @media (min-width: 992px) {
     .arrow-left {
         left: -40px;
@@ -114,9 +125,13 @@ footer .nav-link {
     color: inherit;
     padding-top: 0;
     padding-bottom: 0;
-  }
-  
-  footer .nav-link:hover {
+}
+
+footer .nav-link:hover {
     color: #754ffe;
-  }
-  
+}
+
+.saved:hover {
+    background-color: #d3d3d3;
+    cursor: pointer;
+}
